@@ -11,6 +11,6 @@ class Pizza(models.Model):
     toppings = models.ManyToManyField(Topping)
 
     def __str__(self):
-        return "I am a pizza"
+        return self.name
 
 # making some more changes
